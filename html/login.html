@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <form action="POST">
-        <label>
-            Username:
-            <input type="text" autocomplete="username" required class="credentials" id="username">
+    <form class="login-form" action="POST">
+        <h1>Login</h1>
+        <label class="email credentials">
+            <i class="fa-solid fa-envelope"></i>
+            <input required placeholder="Enter your email" type="email" autocomplete="email">
         </label>
-        <label>
-            Password:
-            <input type="password" name="password" class="credentials" id="password">
+        <label class="password credentials">
+            <i class="fa-solid fa-lock"></i>
+            <input required placeholder="Enter your password" type="password" name="password">
         </label>
-        <label>
-            I agree to terms and conditions.
-            <input type="checkbox" name="agree-terms-checkbox">
-        </label>
-        <button type="submit">
+        <!-- <label id="checkbox-label">
+            <p class="terms">I agree to terms and conditions.</p>
+            <input class="terms" type="checkbox" name="agree-terms-checkbox">
+        </label> -->
+        <div>
+            <label id="checkbox-label">
+                <input class="terms" type="checkbox" name="agree-terms-checkbox">
+                <p class="terms">Remember me</p>
+            </label> 
+            <a href="">Forgot your password?</a>
+        </div>
+        <button class="form-button" type="submit">
             Login
         </button>
     </form>
+    <script src="https://kit.fontawesome.com/1a8b608eaa.js" crossorigin="anonymous"></script>
 </body>
 </html>

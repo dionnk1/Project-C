@@ -1,0 +1,66 @@
+.login-form{
+    background-color: white;
+    padding: 50px;
+    width: 28%;
+    border-radius: 10px;
+
+    label, button{
+        width: 100%;
+        display: inline-flex;
+        user-select: none;
+    }
+
+    input{
+        width: 90%;
+        height: 6vh;
+        border: none;
+        outline: none;
+    }
+
+    i{
+        margin-right: 1vw;
+        font-size: 20px;
+    }
+
+    .credentials{
+        display: flex;
+        border-bottom: 1px solid grey ;
+        align-items: center;
+        margin: 15px 0px;
+
+    }
+
+    .credentials:focus-within::after {
+        border: none;
+    }
+
+    div{
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vh;
+        margin-bottom: 3vh;
+        a{
+            text-decoration: none;
+        }
+    }
+
+    #checkbox-label{
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+        width: 50%;
+        p{            
+            display: flex;
+            width:auto;
+            height: 2.5vh;
+            margin-left: 1vw;
+        }
+        input{
+            display: flex;
+            align-items: start;
+            width: auto;
+            height: 6vh;        }
+    }
+}
