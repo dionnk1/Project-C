@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Login form of my website">
+    <meta name="description" content="Signup form for my website">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <form class="credentials-form" action="POST">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <label class="email credentials">
+            <i class="fa-solid fa-user"></i>
+            <input required placeholder="Enter you username" type="text" autocomplete="username">
+        </label>
+        <label class="password credentials">
             <i class="fa-solid fa-envelope"></i>
-            <input required placeholder="Enter your email" type="email" autocomplete="email">
+            <input required placeholder="Enter your email" autocomplete="email" type="email" name="email">
         </label>
         <label class="password credentials">
             <i class="fa-solid fa-lock"></i>
@@ -26,12 +30,13 @@
             <a href="#" class="forgot-password">Forgot your password?</a>
         </div>
         <button class="form-button" type="submit">
-            Login
+            Register
         </button>
         <div>
-            <a  href="../html/signup.html" class="signup-anchor">Not a member? <span>Sign up</span></a>
+            <a  href="../html/login.html" class="signup-anchor">Already a member? <span>Log in</span></a>
         </div>
     </form>
     <script src="https://kit.fontawesome.com/1a8b608eaa.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

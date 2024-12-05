@@ -19,37 +19,40 @@ body {
   border-radius: 7px;
 }
 
-.login-form {
-  background-color: white;
+.credentials-form {
+  background-color: #ffffff;
   padding: 50px;
-  width: 28%;
-  border-radius: 10px;
+  width: 30%;
+  border-radius: 5px;
 }
-.login-form label, .login-form button {
+.credentials-form label, .credentials-form button {
   width: 100%;
   display: inline-flex;
   user-select: none;
 }
-.login-form input {
-  width: 90%;
-  height: 6vh;
+.credentials-form input {
+  width: 100%;
+  height: 2rem;
   border: none;
   outline: none;
 }
-.login-form i {
+.credentials-form i {
   margin-right: 1vw;
   font-size: 20px;
 }
-.login-form .credentials {
+.credentials-form .credentials {
   display: flex;
   border-bottom: 1px solid grey;
   align-items: center;
   margin: 15px 0px;
 }
-.login-form .credentials:focus-within::after {
+.credentials-form .credentials:focus-within::after {
   border: none;
 }
-.login-form div {
+.credentials-form .credentials input:is(:focus, :valid) ~ i {
+  color: #0f8bde;
+}
+.credentials-form div {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
@@ -57,26 +60,26 @@ body {
   height: 5vh;
   margin-bottom: 3vh;
 }
-.login-form div a {
+.credentials-form div a {
   text-decoration: none;
 }
-.login-form #checkbox-label {
+.credentials-form #checkbox-label {
   display: inline-flex;
   align-items: center;
   font-size: 16px;
   width: 50%;
 }
-.login-form #checkbox-label p {
+.credentials-form #checkbox-label p {
   display: flex;
   width: auto;
   height: 2.5vh;
   margin-left: 1vw;
 }
-.login-form #checkbox-label input {
+.credentials-form #checkbox-label input {
   display: flex;
   align-items: start;
   width: auto;
   height: 6vh;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=main.css.map */
