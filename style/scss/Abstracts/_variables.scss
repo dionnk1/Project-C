@@ -1,17 +1,19 @@
 // Colors
 $primary-color: #0f8bde;
-$grey-color: grey;
+$grey-color: #ccc;
 $white-color: #ffffff;
 $black-color: #000;
 
+
 // Border
-$border-radius: 5px;
-$border-radius-element: 7px;
+$border-radius: 1.5rem;
+$border-radius-element: 2rem;
 
 // Paddings and margins
-$form-padding: 50px;
-$padding: 15px;
+$form-padding: 5rem;
+$padding: 3rem;
+$input-padding: 2rem;
 
 
 // Font
-$font-size: 16px !default;
+$font-size: 1.2rem !default;
