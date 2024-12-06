@@ -1,9 +1,16 @@
 body {
   display: flex;
-  height: 90vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
   background-color: #0f8bde;
+}
+
+button {
+  width: 100%;
+  display: inline-flex;
+  user-select: none;
+  margin-bottom: 1rem;
 }
 
 .form-button {
@@ -21,65 +28,78 @@ body {
 
 .credentials-form {
   background-color: #ffffff;
-  padding: 50px;
+  padding: 5rem;
   width: 30%;
-  border-radius: 5px;
+  border-radius: 1.5rem;
+  margin-top: 50px;
 }
-.credentials-form label, .credentials-form button {
+.credentials-form label {
   width: 100%;
   display: inline-flex;
   user-select: none;
-}
-.credentials-form input {
-  width: 100%;
-  height: 2rem;
-  border: none;
-  outline: none;
-}
-.credentials-form i {
-  margin-right: 1vw;
-  font-size: 20px;
-}
-.credentials-form .credentials {
-  display: flex;
-  border-bottom: 1px solid grey;
+  margin-bottom: 1.5rem;
   align-items: center;
-  margin: 15px 0px;
 }
-.credentials-form .credentials:focus-within::after {
+.credentials-form .credentials input {
   border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.credentials-form .credentials input:is(:focus, :valid) {
+  border-bottom-color: #0f8bde;
 }
 .credentials-form .credentials input:is(:focus, :valid) ~ i {
   color: #0f8bde;
+}
+.credentials-form i {
+  margin-right: 0.2rem;
+  font-size: 1.2rem;
+  color: #ccc;
 }
 .credentials-form div {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
-  margin-bottom: 3vh;
+  height: 2rem;
+  margin-bottom: 1rem;
 }
 .credentials-form div a {
   text-decoration: none;
+  max-width: 40%;
+}
+@media (max-width: 768px) {
+  .credentials-form div {
+    display: block;
+    height: 30%;
+  }
+  .credentials-form div .element {
+    display: block;
+    max-width: 100%;
+  }
 }
 .credentials-form #checkbox-label {
   display: inline-flex;
   align-items: center;
-  font-size: 16px;
-  width: 50%;
-}
-.credentials-form #checkbox-label p {
-  display: flex;
-  width: auto;
-  height: 2.5vh;
-  margin-left: 1vw;
+  max-width: 50%;
+  height: 2rem;
 }
 .credentials-form #checkbox-label input {
   display: flex;
-  align-items: start;
   width: auto;
-  height: 6vh;
+  height: 2rem;
+  margin-right: 0.2rem;
+}
+.credentials-form .forgot-password {
+  position: relative;
+  bottom: 10px;
+}
+.credentials-form .ls-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

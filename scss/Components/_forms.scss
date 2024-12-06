@@ -5,68 +5,81 @@
     padding: $form-padding;
     width: 30%;
     border-radius: $border-radius;
-
-    label, button{
+    margin-top: 50px;
+    
+    label{
         width: 100%;
         display: inline-flex;
         user-select: none;
+        margin-bottom: 1.5rem;
+        align-items: center;
     }
 
-    input{
+    .credentials input {
+        border: none; // Remove default borders
+        border-bottom: 1px solid #ccc; // Default underline
         width: 100%;
-        height: 2rem;
-        border: none;
         outline: none;
-    }
+        transition: border-color 0.3s ease;
+      
+        &:is(:focus, :valid) {
+          border-bottom-color: $primary-color;
+        }
+
+        &:is(:focus, :valid) ~ i{
+            color: $primary-color;
+          }
+      }
 
     i{
-        margin-right: 1vw;
-        font-size: 20px;
+        margin-right: 0.2rem;
+        font-size: $font-size;
+        color: #ccc;
     }
-
-    .credentials{
-        display: flex;
-        border-bottom: 1px solid grey ;
-        align-items: center;
-        margin: 15px 0px;
-
-    }
-
-    .credentials:focus-within::after {
-        border: none;
-    }
-
-    .credentials input:is(:focus, :valid) ~i{
-        color: $primary-color;
-    }
+    
 
     div{
         display: inline-flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        height: 5vh;
-        margin-bottom: 3vh;
+        height: 2rem;
+        margin-bottom: 1rem;
         a{
             text-decoration: none;
+            max-width: 40%;
+        }
+        @media (max-width: 768px) {
+            display: block;
+            height: 30%;
+            .element {
+                display: block;
+                max-width: 100%;
+            }
         }
     }
 
     #checkbox-label{
         display: inline-flex;
         align-items: center;
-        font-size: 16px;
-        width: 50%;
-        p{            
-            display: flex;
-            width:auto;
-            height: 2.5vh;
-            margin-left: 1vw;
-        }
+        max-width: 50%;
+        height: 2rem;
         input{
             display: flex;
-            align-items: start;
             width: auto;
-            height: 6vh;        }
+            height: 2rem;
+            margin-right: 0.2rem;
+        }
+    }
+
+    .forgot-password{
+        position: relative;
+        bottom: 10px;
+    }   
+
+    .ls-nav{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 }
