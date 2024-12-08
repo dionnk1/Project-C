@@ -1,4 +1,5 @@
 @use './Abstracts/' as *;
-@use './Base/base-login-signup' as base;
+// @use './Base/base-login-signup' as base;
+@use './Base/' as base;
 @use './Components/' as comp;
 @use './Pages/' as pages;

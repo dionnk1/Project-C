@@ -1,0 +1,25 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+.carousel{
+    padding: 0;
+    margin: 0;
+}
+
+.break{
+    display: inline-flex;
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+}
