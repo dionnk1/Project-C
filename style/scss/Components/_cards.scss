@@ -10,11 +10,21 @@
     height: 15rem;
     margin-bottom: 3rem;
     padding: 50px 5px 0px;
-    border: 1.5px solid $primary-color;
 }
 
 .card-text{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ourservices-row{
+    padding: 0 10rem;
+    @media (max-width:1400px) {
+        padding: 0;
+    }
+}
+
+.about-us-paragraph{
+    padding-top: 30%;
 }
