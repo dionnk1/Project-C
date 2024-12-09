@@ -1,3 +1,4 @@
+@use '../Abstracts/' as *;
 .container-fluid{
     margin: 0;
     padding: 0;
@@ -21,6 +22,14 @@
 .break{
     display: inline-flex;
     height: 10rem;
-    margin-top: 3rem;
+    margin-top: 16rem;
     padding: 0;
+}
+
+.new-section{
+    margin-top: 3rem;
+}
+
+.last-break{
+    margin-top: 10rem;
 }

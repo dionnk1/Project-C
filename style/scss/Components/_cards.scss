@@ -1,3 +1,4 @@
+@use '../Abstracts/' as *;
 .col-card{
     display: inline-flex;
     justify-content: center;
@@ -6,6 +7,24 @@
 
 .card{
     max-width: 80%;
-    height: 12rem;
+    height: 15rem;
     margin-bottom: 3rem;
+    padding: 50px 5px 0px;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourservices-row{
+    padding: 0 10rem;
+    @media (max-width:1400px) {
+        padding: 0;
+    }
+}
+
+.about-us-paragraph{
+    padding-top: 30%;
 }
