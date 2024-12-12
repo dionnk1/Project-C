@@ -75,6 +75,12 @@ body {
   padding-top: 30%;
 }
 
+.signin-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   width: 100%;
   display: inline-flex;
@@ -124,7 +130,7 @@ footer a {
 
 .c-caption {
   background-color: rgba(248, 248, 248, 0.8);
-  width: 35%;
+  width: 30%;
   height: 60%;
   position: relative;
   top: 10rem;
