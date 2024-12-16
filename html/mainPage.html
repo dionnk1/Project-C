@@ -40,10 +40,10 @@
         </div>
       </nav>
       <div class="hidden" id="links">
-        <a href="#services" class="btn d-flex justify-content-start">Services</a>
-        <a href="#about-us" class="btn d-flex justify-content-start">About us</a>
-        <a href="#contact-us" class="btn d-flex justify-content-start">Contact us</a>
-        <a class="btn btn-primary d-flex justify-content-start" href="./login.html">Join us</a>
+        <a style="cursor: pointer; color: #0f8bde;" href="#services" class="btn d-flex justify-content-start">Services</a>
+        <a style="cursor: pointer; color: #0f8bde;"  href="#about-us" class="btn d-flex justify-content-start">About us</a>
+        <a style="cursor: pointer; color: #0f8bde;"  href="#contact-us" class="btn d-flex justify-content-start">Contact us</a>
+        <a style="cursor: pointer; width: 7rem;"  class="btn btn-primary d-flex justify-content-start" href="./login.html">Join us</a>
       </div>
     </div>
     <div class="row">
@@ -274,18 +274,26 @@
   <script>
     function myFunction(id) {
     const links = document.getElementById(id);
+    const isSmallScreen = document.body.getBoundingClientRect().width <= 992;
 
-    if (links.style.display === "block" && document.body.style.maxWidth <= '992px') {
-        links.style.display = "none";
-    } 
-    else if (links.style.display === 'none' && document.body.style.maxWidth <= '992px'){
-        links.style.display = "flex";
-        links.style.flexDirection = 'column'
-        links.style.zIndex = "2"
+    if (isSmallScreen) {
+        if (links.style.display === "block" || links.style.display === "flex") {
+            links.style.display = "none";
+        } else {
+            links.style.display = "flex";
+            links.style.flexDirection = "column";
+        }
     } else {
-        links.style.display = 'none'
+        links.style.display = "none";
     }
-  }
+}
+
+window.addEventListener("resize", () => {
+    const links = document.getElementById("links"); // Replace with your element's ID
+    if (document.body.getBoundingClientRect().width > 992) {
+        links.style.display = "none"; // Ensure the element is hidden when the screen is wide
+    }
+});
   </script>
 </body>
 
