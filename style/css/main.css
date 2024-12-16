@@ -150,14 +150,32 @@ button {
   align-items: center;
 }
 .navbar-nav a {
-  color: #8c8c8c;
+  color: #0f8bde;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 .navbar-nav a:hover {
   color: #0f8bde;
   transition: all 0.2s;
+}
+
+.hidden {
+  display: none;
+  position: relative;
+  top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  display: none;
+  color: #0f8bde;
+  font-size: 25px;
+}
+@media (max-width: 992px) {
+  .icon {
+    display: block;
+  }
 }
 
 footer {
