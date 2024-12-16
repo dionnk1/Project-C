@@ -20,7 +20,7 @@
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
         <a href="#" class="navbar-brand border-0">SOLPan</a>
-        <ul class="navbar-nav ml-auto col-lg-12">
+        <ul class="navbar-nav ml-auto col-lg-12 d-none d-lg-flex">
           <li class="nav-item">
             <a href="#services">Services</a>
           </li>
@@ -34,14 +34,23 @@
             <a class="btn btn-primary" style="color: #f8f9fa;" href="./login.html">Join Us</a>
           </li>
         </ul>
+
+        <div class="icon" onclick="myFunction('links')">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
-      </nav>
+      <div class="hidden" id="links">
+        <a href="#services" class="btn d-flex justify-content-start">Services</a>
+        <a href="#about-us" class="btn d-flex justify-content-start">About us</a>
+        <a href="#contact-us" class="btn d-flex justify-content-start">Contact us</a>
+        <a class="btn btn-primary d-flex justify-content-start" href="./login.html">Join us</a>
+      </div>
     </div>
     <div class="row">
       <div id="" class="carousel slide c-carousel" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" style="filter: brightness(0.7); height:480px" src="../images/img 3.jpg">
+            <img class="d-block w-100" style="filter: brightness(0.7); height:580px" alt="Carousel image" src="../images/img 4.jpg">
           </div>
           <div class="carousel-caption d-none d-md-block c-caption rounded py-4 px-4">
             <h5>SOLPan</h5>
@@ -153,7 +162,7 @@
       <div class="row ">
         <div class="col-xxl-2 col-1"></div>
         <div class="col-xxl-4 border border-light shadow col-xl-5 col-lg-5 d-lg-block d-none div-img">
-          <img class="border border-light shadow image" src="../images/panelsolar.jpeg" alt="">
+          <img class="border border-light shadow image" src="../images/img 5.jpg" alt="">
         </div>
         <div class="col-xxl-4 m-0 col-xl-5 col-lg-5 col-10">
           <h3 class="text-center">ABOUT US</h3>
@@ -255,12 +264,29 @@
         <div class="col-md-12 d-flex justify-content-between">
 
           <p class="col-md-4 d-flex justify-content-start">2024 SOLPan © All right reserved</p>
-          <a class="col-md-4 d-flex justify-content-center" href="#">Terms of use</a>
-          <a class="col-md-4 d-flex justify-content-end" href="#">Privacy policies</a>
+          <!-- <a class="col-md-4 d-flex justify-content-center" href="#">Terms of use</a>
+          <a class="col-md-4 d-flex justify-content-end" href="#">Privacy policies</a> -->
         </div>
       </div>
     </footer>
   </div>
+  <script src="https://kit.fontawesome.com/1a8b608eaa.js" crossorigin="anonymous"></script>
+  <script>
+    function myFunction(id) {
+    const links = document.getElementById(id);
+
+    if (links.style.display === "block" && document.body.style.maxWidth <= '992px') {
+        links.style.display = "none";
+    } 
+    else if (links.style.display === 'none' && document.body.style.maxWidth <= '992px'){
+        links.style.display = "flex";
+        links.style.flexDirection = 'column'
+        links.style.zIndex = "2"
+    } else {
+        links.style.display = 'none'
+    }
+  }
+  </script>
 </body>
 
 </html>
