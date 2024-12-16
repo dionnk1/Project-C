@@ -175,6 +175,7 @@ button {
 @media (max-width: 992px) {
   .icon {
     display: block;
+    cursor: pointer;
   }
 }
 
