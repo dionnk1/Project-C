@@ -40,17 +40,22 @@
         </div>
       </nav>
       <div class="hidden" id="links">
-        <a style="cursor: pointer; color: #0f8bde;" href="#services" class="btn d-flex justify-content-start">Services</a>
-        <a style="cursor: pointer; color: #0f8bde;"  href="#about-us" class="btn d-flex justify-content-start">About us</a>
-        <a style="cursor: pointer; color: #0f8bde;"  href="#contact-us" class="btn d-flex justify-content-start">Contact us</a>
-        <a style="cursor: pointer; width: 7rem;"  class="btn btn-primary d-flex justify-content-start" href="./login.html">Join us</a>
+        <a style="cursor: pointer; color: #0f8bde;" href="#services"
+          class="btn d-flex justify-content-start">Services</a>
+        <a style="cursor: pointer; color: #0f8bde;" href="#about-us" class="btn d-flex justify-content-start">About
+          us</a>
+        <a style="cursor: pointer; color: #0f8bde;" href="#contact-us" class="btn d-flex justify-content-start">Contact
+          us</a>
+        <a style="cursor: pointer; width: 7rem;" class="btn btn-primary d-flex justify-content-start"
+          href="./login.html">Join us</a>
       </div>
     </div>
     <div class="row">
       <div id="" class="carousel slide c-carousel" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" style="filter: brightness(0.7); height:580px" alt="Carousel image" src="../images/img 4.jpg">
+            <img class="d-block w-100" style="filter: brightness(0.7); height:580px" alt="Carousel image"
+              src="../images/img 4.jpg">
           </div>
           <div class="carousel-caption d-none d-md-block c-caption rounded py-4 px-4">
             <h5>SOLPan</h5>
@@ -66,7 +71,7 @@
     <div class="row" id="services">
       <div class="row text-center">
         <div class="col-md-2 col-1"></div>
-        <div class="col-md-8 col-10 d-block break-text" style="padding: 3rem 0rem">
+        <div class="col-md-8 col-10 d-block break-text" style="padding: 10rem 0rem">
           <hr>
           <h3 class="mt-5">OUR SERVICES</h3>
         </div>
@@ -186,11 +191,11 @@
     </div>
     <div class="row" id="contact-us">
       <div class="new-section row text-center">
-        <div class="col-12 d-block break-text" style="padding: 3rem">
+        <div class="col-md-2 col-1"></div>
+        <div class="col-md-8 col-10 d-block break-text" style="padding: 3rem 0rem">
           <hr>
         </div>
       </div>
-    </div>
     <div class="row">
       <div class="col-md-2 col-1"></div>
       <div class="col-md-8 col-10 border rounded shadow px-0">
@@ -273,27 +278,27 @@
   <script src="https://kit.fontawesome.com/1a8b608eaa.js" crossorigin="anonymous"></script>
   <script>
     function myFunction(id) {
-    const links = document.getElementById(id);
-    const isSmallScreen = document.body.getBoundingClientRect().width <= 992;
+      const links = document.getElementById(id);
+      const isSmallScreen = document.body.getBoundingClientRect().width <= 992;
 
-    if (isSmallScreen) {
+      if (isSmallScreen) {
         if (links.style.display === "block" || links.style.display === "flex") {
-            links.style.display = "none";
+          links.style.display = "none";
         } else {
-            links.style.display = "flex";
-            links.style.flexDirection = "column";
+          links.style.display = "flex";
+          links.style.flexDirection = "column";
         }
-    } else {
+      } else {
         links.style.display = "none";
+      }
     }
-}
 
-window.addEventListener("resize", () => {
-    const links = document.getElementById("links"); // Replace with your element's ID
-    if (document.body.getBoundingClientRect().width > 992) {
+    window.addEventListener("resize", () => {
+      const links = document.getElementById("links"); // Replace with your element's ID
+      if (document.body.getBoundingClientRect().width > 992) {
         links.style.display = "none"; // Ensure the element is hidden when the screen is wide
-    }
-});
+      }
+    });
   </script>
 </body>
 
